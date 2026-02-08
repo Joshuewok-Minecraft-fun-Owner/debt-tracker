@@ -63,7 +63,7 @@
   let balance = parseFloat(localStorage.getItem("balance")) || 0;
   let lastInterestTime = parseFloat(localStorage.getItem("lastInterestTime")) || Date.now();
 
-  const interestRate = 0.05; // 5% interest per day (example)
+  const interestRate = 0.05; // 5% interest per day
   const minBalanceForInterest = 5.00;
 
   function updateDisplay() {
