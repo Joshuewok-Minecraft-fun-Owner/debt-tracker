@@ -2,6 +2,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyD8aRlj5F76g20G4BqHpHfn30D3rfnEBDU",
   authDomain: "kai-s-debt-tracker.firebaseapp.com",
+  databaseURL: "https://kai-s-debt-tracker-default-rtdb.firebaseio.com",
   projectId: "kai-s-debt-tracker",
   storageBucket: "kai-s-debt-tracker.firebasestorage.app",
   messagingSenderId: "957599213827",
