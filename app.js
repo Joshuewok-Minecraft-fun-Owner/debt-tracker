@@ -1,4 +1,4 @@
-// Your Firebase config
+// Your Firebase config (with databaseURL added)
 const firebaseConfig = {
   apiKey: "AIzaSyD8aRlj5F76g20G4BqHpHfn30D3rfnEBDU",
   authDomain: "kai-s-debt-tracker.firebaseapp.com",
@@ -26,19 +26,19 @@ const amountInput = document.getElementById("amount");
 let balance = 0;
 let history = [];
 
-// Sync balance from Firebase
+// Sync balance
 balanceRef.on("value", snapshot => {
     balance = snapshot.val() || 0;
     balanceEl.textContent = `$${balance.toFixed(2)}`;
 });
 
-// Sync history from Firebase
+// Sync history
 historyRef.on("value", snapshot => {
     history = snapshot.val() || [];
     renderHistory();
 });
 
-// Render history list
+// Render history
 function renderHistory() {
     historyEl.innerHTML = "";
     history.forEach(entry => {
